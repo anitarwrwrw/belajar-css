@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selector</title>
+    <style>
+      div > p {
+        color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Child Selector</h1>
+    <div>
+      <article>
+        <p>
+          child selector adalah selector untuk memilih child/anak dari element
+          yang dipilih
+        </p>
+        <p>
+          kenapa p ini tidak dipilih? karena dia parentnya adalah elemnt
+          article,nah article memiliki parent div secara langsung, jadi p ini
+          bukan child dari div secara langsung
+        </p>
+      </article>
+      <p>
+        elemen yang dimaksud adalah ini karena dia memiliki parent div langsung
+      </p>
+    </div>
+    <p>sedangkan p ini tidak dipilih karena ia tidak memiliki parent div</p>
+  </body>
+</html>

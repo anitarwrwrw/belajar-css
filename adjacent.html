@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator element</title>
+    <style>
+      div + p {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Adjacent Sibling selector</h1>
+    <div>
+      <article>
+        <p>
+          Adjacent sibling selectordigunakan untuk memilih element setelah
+          element yang dipiih
+        </p>
+        <p>syaratnya ia harus memiliki parent yang sama</p>
+      </article>
+      <p>
+        nah paragraf ini tidak dipilih karena tidak memiliki parent yang sama
+        secara langsung dengan tag div, terlebih lagi ia ada didalam div
+      </p>
+    </div>
+    <p>
+      nah paragraf ini yang dipilih karena dia memiiki parent yang sama dengan
+      div yaitu body
+    </p>
+    <p>
+      ini tidak dipilih karena hanya ada 1 element setelahnya saja yang bisa
+      dipilih
+    </p>
+  </body>
+</html>
